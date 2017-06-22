@@ -1,0 +1,16 @@
+#!/bin/sh
+#Amanda Anderson May 30, 2017
+# - hello_world: This page prints to screen "Hello, World."
+#
+#         
+         
+echo "Hello, World."
+TIME=$(date "+%k")
+        
+if ((TIME < 12 )); then
+    echo "Good morning" 
+elif ((TIME < 18 )); then
+    echo "Good afternoon"
+else
+    echo "Good evening"
+fi  
